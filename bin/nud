@@ -35,7 +35,9 @@ var period = program.args[1];
 npmUserDownloads(user, period).then(function (pkgs) {
   pkgs = pkgs.slice(0, limit);
   var data = _.reduce(pkgs, function (result, value) {
-    result[value.package] = value.downloads;
+    if (value.downloads) {
+      result[value.package] = value.downloads;
+    }
     return result;
   }, {});
   console.log(bars(data, { bar: '█' }));
