@@ -1,0 +1,25 @@
+{
+  "name": "npm-user-downloads",
+  "description": "List npm user all modules download counts.",
+  "version": "1.0.0",
+  "keywords": [
+    "download",
+    "npm-user",
+    "count"
+  ],
+  "bin": {
+    "nud": "./bin/nud"
+  },
+  "dependencies": {
+    "bars": "jstrace/bars",
+    "commander": "^2.9.0",
+    "lodash": "^4.0.0",
+    "npm-package-downloads": "^1.0.0",
+    "npm-user-packages": "^1.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nswbmw/npm-user-downloads.git"
+  }
+}
