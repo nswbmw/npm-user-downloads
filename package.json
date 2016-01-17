@@ -15,7 +15,8 @@
     "commander": "^2.9.0",
     "lodash": "^4.0.0",
     "npm-package-downloads": "^1.0.0",
-    "npm-user-packages": "^1.0.0"
+    "npm-user-packages": "^1.0.0",
+    "superagent": "^1.6.1"
   },
   "license": "MIT",
   "repository": {
