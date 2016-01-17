@@ -10,6 +10,8 @@ module.exports = function npmUserDownloads(user, period, _notSort) {
       return npmPackageDownloads(_.map(pkgs, 'name'), period);
     })
     .then(function (pkgs) {
-      return _notSort ? pkgs : _.sortBy(pkgs, 'downloads').reverse();
+      return _notSort
+        ? _(pkgs).filter('downloads').value()
+        : _(pkgs).filter('downloads').sortBy('downloads').reverse().value();
     });
 };

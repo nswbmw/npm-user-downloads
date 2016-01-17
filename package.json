@@ -1,7 +1,7 @@
 {
   "name": "npm-user-downloads",
   "description": "List npm user all modules download counts.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "download",
     "npm-user",
